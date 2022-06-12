@@ -1,2 +1,2 @@
 # 312-The-News-City
-我們好累，好想睡
+大家檔案放去「update」，不要丟「main」！
