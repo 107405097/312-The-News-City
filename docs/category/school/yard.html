@@ -1,0 +1,283 @@
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>操場 - 312 編輯市 The News City</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/card.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/tag.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="margin: 0px; background-color: #f5f5f5">
+
+    <!--header-->
+    <header>
+
+        <!--LOGO-->
+        <a href="" title="312 編輯市 The News City"><img class="logo" src="./assets/icons/logo-1.png"></a>
+
+        <!--HBG-->
+        <div class="hbg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!--導覽清單NAVlIST-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://107405097.github.io/312-The-News-City/category/school.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                學校
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://107405097.github.io/312-The-News-City/category/classroom.html">教室</a></li>
+                                <li><a class="dropdown-item" href="https://107405097.github.io/312-The-News-City/category/lab.html">實驗室</a></li>
+                                <li><a class="dropdown-item" href="https://107405097.github.io/312-The-News-City/category/gallery.html">藝廊</a></li>
+                                <li><a class="dropdown-item" href="https://107405097.github.io/312-The-News-City/category/yard.html">操場</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">放映院</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">博物館</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">市政團隊</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+
+        <!--手機板導覽-->
+        <div class="modal bg_nav fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" style="margin: 0;">
+                <div class="modal-content mobileNAV">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li id="school">
+                                <a id="cl" data-bs-toggle="collapse" href="#collapse" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    學校
+                                    <svg width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 9L0.00481017 -1.2235e-06L12.9952 -8.78432e-08L6.5 9Z"
+                                            fill="currentcolor" />
+                                    </svg>
+                                </a>
+                                <ul class="collapse" id="collapse">
+                                    <li><a class="item" href="#">教室</a></li>
+                                    <li><a class="item" href="#">實驗室</a></li>
+                                    <li><a class="item" href="#">藝廊</a></li>
+                                    <li><a class="item" href="#">操場</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-item" href="#">放映院</a></li>
+                            <li><a class="nav-item" href="#">博物館</a></li>
+                            <li><a class="nav-item" href="#">市政團隊</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--cards-->
+    <h1 class="category-heading">操場</h1>
+    <div class="card-list-container">
+        <div class="card-list">
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>大專賽舞力四射&nbsp&nbspOSTAR融舞風創新意</h1>
+                        </a>
+                        <p class="metadata">2020/12/31．陳宥菘</p>
+                        <p class="intro">
+                            身穿藍色、紅色衣服的選手各據舞台一邊，輪流來到舞台中央「Battle」，決賽參賽隊伍「OSTAR」在比賽中重現經典電影〈Beat
+                            Street（熱街小子）〉橋段，搏得滿堂彩。
+                        </p>
+                        <div class="tag-container">
+                            <a href="" title="Breaking">Breaking</a>
+                            <a href="" title="Hip-hop">Hip-hop</a>
+                            <a href="" title="OSTAR">OSTAR</a>
+                            <a href="" title="大專校院熱舞大賽">大專校院熱舞大賽</a>
+                            <a href="" title="導師合作">導師合作</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/962cd9f1793c2d2ab70d8538d8ff800d-scaled.jpg">
+                    </a></div>
+            </card>
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>短水道泳賽高手雲集&nbsp&nbsp前三齊破全國紀錄</h1>
+                        </a>
+                        <p class="metadata">2020/12/17．陳宥菘</p>
+                        <p class="intro">
+                            出發訊號聲響起，選手奮力跳入水中，激起大量水花。109年全國冬季短水道游泳錦標賽10日至14日於國立中正大學游泳池盛大登場。其中，18及以上歲級男子組100公尺蛙式決賽，由來自國立臺灣師範大學的國手吳浚鋒以59秒14，一舉刷新全國及大會紀錄59秒88，強勢摘金。
+                        </p>
+
+                    </div>
+                    <div class="tag-container">
+                        <a href="" title="冬季短水道游泳錦標賽">冬季短水道游泳錦標賽</a>
+                        <a href="" title="卓承齊">卓承齊</a>
+                        <a href="" title="吳浚鋒">吳浚鋒</a>
+                        <a href="" title="王星皓">王星皓</a>
+                        <a href="" title="蔡秉融">蔡秉融</a>
+                        <a href="" title="陳志明">陳志明</a>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/2f5c9c29dacc1db6f7399bf259b8ec6c-scaled.jpg">
+                    </a></div>
+            </card>
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>馬場馬術考驗人馬默契&nbsp&nbsp臨場反應成關鍵</h1>
+                        </a>
+                        <p class="metadata">2020/12/16．詹湘淇</p>
+                        <p class="intro">
+                            馬匹秀麗的鬃毛在陽光下閃動，配合騎手動作，時以優雅步調漫步，時以輕快韻律收縮跑步。2020年FEI世界挑戰盃馬場馬術錦標賽（以下簡稱為FEI世界挑戰盃）12日於聖喬治馬術廄舍舉行，吸引26名馬術好手齊聚較勁。
+                        </p>
+                    </div>
+                    <div class="tag-container">
+                        <a href="" title="Dressage">Dressage </a>
+                        <a href="" title="FEI世界挑戰盃">FEI世界挑戰盃</a>
+                        <a href="" title="鍾宜芸">鍾宜芸</a>
+                        <a href="" title="馬場馬術">馬場馬術</a>
+                        <a href="" title="馬術">馬術</a>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/ab3cfd7a359964f2126b1226965fa0c3-2048x1365.jpg">
+                    </a></div>
+            </card>
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>敗部重生轉念終奪冠&nbsp&nbsp吳坤霖締撞球四連霸</h1>
+                        </a>
+                        <p class="metadata">2020/12/02．詹湘淇</p>
+                        <p class="intro">
+                            中華民國109年全國大專校院撞球聯賽（以下簡稱大專撞球聯賽）決賽於11月27日在九號颱風撞球休閒館登場。公開男子組九號球個人賽冠軍戰由素有「港都魔獸」之稱的正修科技大學吳坤霖迎戰國立屏東大學張益維，最終吳坤霖在加賽中以8：3的成績締造四連霸紀錄。
+                        </p>
+                        <div class="tag-container">
+                            <a href="" title="大專撞球聯賽">大專撞球聯賽</a>
+                            <a href="" title="撞球">撞球</a>
+                            <a href="" title="吳坤霖">吳坤霖</a>
+                            <a href="" title="張益維">張益維</a>
+                            <a href="" title="江水淨">江水淨</a>
+                            <a href="" title="陳佳樺">陳佳樺</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/e73c72c265d4ba712b8646231e3c10c5-2048x1365.jpg">
+                    </a></div>
+            </card>
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>【全大運】備戰東奧&nbsp&nbsp北大湯智鈞射下三金</h1>
+                        </a>
+                        <p class="metadata">2020/11/04．詹湘淇</p>
+                        <p class="intro">
+                            屏氣凝神，拉緊弓弦，鎖定黃心，瀟灑放箭。中華民國109年全國大專校院運動會（以下簡稱全大運）射箭項目公開男子組反曲弓個人對抗賽，金牌戰於10月31日在國立高雄大學棒壘球場舉行，由2021年夏季奧林匹克運動會（以下簡稱東京奧運）代表隊選手、國立臺北大學湯智鈞交手國立臺灣師範大學洪晟皓。最終湯智鈞以6：0的成績奪得冠軍，本屆賽會共收下三面金牌。
+                        </p>
+                        <div class="tag-container">
+                            <a href="" title="全大運">全大運</a>
+                            <a href="" title="射箭">射箭</a>
+                            <a href="" title="東京奧運">東京奧運</a>
+                            <a href="" title="魏均珩">魏均珩</a>
+                            <a href="" title="湯智鈞">湯智鈞</a>
+                            <a href="" title="鄧宇成">鄧宇成</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/11/ea66c06c1e1c05fa9f1aa39d98dc5bc1-2048x1365.jpg">
+                    </a></div>
+            </card>
+            <card>
+                <div class="text">
+                    <div class="heading">
+                        <a href="" target="_blank">
+                            <h1>北市大內戰&nbsp&nbsp呂杰修沙灘角力連霸</h1>
+                        </a>
+                        <p class="metadata">2020/10/22．陳宥菘</p>
+                        <p class="intro">
+                            空中飄下微微細雨，在圓形沙場中，選手兩兩對戰，激起陣陣沙塵。中華民國109年全民運動會沙灘角力在花蓮縣北濱公園登場，男子組第二級賽程於18日率先展開。金牌戰由上屆冠軍選手、臺北市立大學運動器材科技研究所的呂杰修，對戰同樣來自北市大的杜偉凡。最終，呂杰修以精準、快速的進攻及扎實的防守，以4：1搶下金牌，成功達成二連霸。
+                        </p>
+                        <div class="tag-container">
+                            <a href="" title="全民運">全民運</a>
+                            <a href="" title="沙灘角力">沙灘角力</a>
+                            <a href="" title="呂杰修">呂杰修</a>
+                            <a href="" title="杜偉凡">杜偉凡</a>
+                            <a href="" title="陳彥凱">陳彥凱</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure"><a href="" target="_blank"><img
+                            src="https://unews.nccu.edu.tw/wp-content/uploads/2020/10/c81e728d9d4c2f636f067f89cc14862c-22-scaled.jpg">
+                    </a></div>
+            </card>
+        </div>
+    </div>
+    <footer>
+        <div class="brand">
+            <a href="" title="312 編輯市 The News City"><img class="logo" src="./assets/icons/logo-1.png"></a>
+            <p class="copyright">Copyright&nbsp©&nbsp2022&nbsp312&nbspThe&nbspNews&nbspCity</p>
+        </div>
+        <div class="about-us"><a href="" target="_blank" title="市政團隊">
+            <div class="us-container">
+                <p class="us-heading">市政團隊</p>
+                <p class="us">陳嘉怡&nbsp&nbsp林昕璿&nbsp&nbsp林孜穎&nbsp&nbsp陳宥菘&nbsp&nbsp詹湘淇</p>
+            </div>
+            <div class="us-container">
+                <p class="us-heading">市政顧問</p>
+                <p class="us">李法賢</p>
+            </div>
+        </a></div>
+        <p class="copyright-mobile">Copyright&nbsp©&nbsp2022&nbsp312&nbspThe&nbspNews&nbspCity</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
