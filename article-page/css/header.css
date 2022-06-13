@@ -243,6 +243,7 @@ a {text-decoration: none;}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .logo{
+        width: 125.63px;
         height: 25px;
     }
 
