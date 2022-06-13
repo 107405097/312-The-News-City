@@ -96,6 +96,7 @@ a {text-decoration: none;}
 
         position: fixed;
         top: 0px;
+        z-index:100;
         background-color: #F5F5F5;
 
     }
