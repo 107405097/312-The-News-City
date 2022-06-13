@@ -93,7 +93,7 @@
 
     .img-box img {
         width: 153px;
-        height: 100%;
+        height: 153px;
         object-fit: cover;
     }
 
@@ -120,7 +120,7 @@
 
     .img-box img {
         width: 144px;
-        height: 100%;
+        height: 144px;
         object-fit: cover;
     }
 
@@ -145,9 +145,13 @@
         margin-bottom: 30px;
     }
 
-    .img-box img {
+    .img-box{
         width: 100%;
         height: 100%;
+    }
+
+    .img-box img {
+        width: 100%;
         object-fit: cover;
     }
 
