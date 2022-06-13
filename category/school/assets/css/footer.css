@@ -22,11 +22,13 @@ footer {
     }
     .copyright{
         font-size: 14px;
+        margin-top: -20px;
     }
     .copyright-mobile {
         display: none;
     }
-    .brand>img {
+
+    .brand img {
         width: 165px;
         height: 33px;
     }
