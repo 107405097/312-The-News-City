@@ -537,6 +537,7 @@ body {
 
     /*小標*/
     h3 {
+        width: calc(364 / 428 * 100%);
         color: #000000;
         font-size: 22px;
         font-weight: 700;
