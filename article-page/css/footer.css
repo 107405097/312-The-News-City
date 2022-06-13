@@ -148,7 +148,7 @@ footer p ,span {
         display: flex;
         flex-direction: column;
         position: relative;
-        z-index:-1;
+        z-index:-100;
     }
 
     footer img {
@@ -178,6 +178,7 @@ footer p ,span {
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        z-index:-100;
     }
 
     footer .member {
@@ -186,6 +187,7 @@ footer p ,span {
         justify-content: space-between;
         position: absolute;
         top: 88px;
+        z-index:-100;
     }
 
     .us{
