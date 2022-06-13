@@ -1,5 +1,9 @@
 a {text-decoration: none;}
 
+.fade{
+    display: none;
+}
+
 /* 桌機 */
 @media (min-width:1024px) {
 
@@ -263,6 +267,9 @@ a {text-decoration: none;}
     }
 }
 
-.fade{
-    display: none;
+@media  (max-width: 767px) and (orientation: portrait) {
+
+    .mobileNAV {
+         Height: 120vh;
+    }
 }
