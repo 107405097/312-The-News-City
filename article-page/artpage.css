@@ -1,0 +1,1135 @@
+/*手機*/
+@media (max-width:767px) {
+   /*首圖*/
+    .mobile-hero-image {
+      margin-top: 100px;
+      width:calc(100vw - 32px - 20px);
+      margin-left: 10px;
+      overflow :hidden;
+    }
+
+    .mobile-label-tag{
+      margin-top: -670px;
+      width:calc(100vw - 40px);
+    }
+
+    .mobile-label{
+      width:calc(100vw - 64px);
+      color: #E77D00; 
+      font-weight: 700; 
+      font-size: 18px; 
+      line-height: 26px; 
+      width:54px; 
+      margin-top: 15px;
+      margin-left: 32px;
+      margin-bottom: 10px;
+    }
+
+    .mobile-title {
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 46px;
+      margin-left: 32px;
+    }
+
+    h1:hover span {
+      display: none;
+      color:#000000;
+    }
+    
+    h1:hover:before {
+      content: '疫情嚴峻';
+      color: #E77D00;
+      font-size: 38px;
+    }
+
+    .mobile-sub-title {
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 36px;
+      margin-left: 32px;
+    }
+  
+    .mobile-author-block{
+      width:calc(100vw - 64px);
+      font-size: 16px;
+      line-height: 24px; 
+      color:#707070;
+      align-items: flex-start;
+      margin-left: 32px;
+    }
+
+    .mobile-tag-container {
+      width:calc(100vw - 64px);
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-left: 32px;
+    }
+
+    .mobile-tag-container a {
+      padding: 3px 8px 4px;
+      text-decoration: none;
+      font-weight: 14px;
+      color: #707070;
+      font-size: 14px;
+      line-height: 20px;
+      background-color: #e5e5e5;
+      border-radius: 5px;
+    }
+
+    .mobile-tag-container a:hover {
+      background-color: #707070;
+      color: #ffffff;
+      transition-property: all;
+      transition-duration: 0s;
+    }
+
+    .mobile-metadata .mobile-tag {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap
+    }      
+
+    .mobile-metadata .mobile-mobile-a {
+      color: #707070;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;  
+      background-color: #E5E5E5;
+      margin: 0 12px 15px 0;
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+
+    .mobile-metadata a:hover {
+     color: #FFFFFF;
+     background-color: #707070;
+    }
+
+    .mobile-audio{
+      margin-top: 400px;
+      margin-left: 45px;
+    }
+  
+    .mobile-lyric{
+      font-family: 'Noto Sans TC';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      align-items: center;
+      text-align: center;
+      color: #D3A889;
+      margin-top: 180px;
+  }
+
+  .mobile-singer{
+      font-family: 'Noto Sans TC';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+  }
+
+  .mobile-text{
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-size: 18px;
+      line-height: 36px;
+      color: #000000;
+      margin-top: 150px;
+      margin-bottom: 150px;
+      margin-left: 32px;
+      text-align: left;
+  }
+
+  .mobile-subhead{
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      text-align:left;
+      display: flex;
+      color: #CD9A76;
+  }
+
+  .mobile-minorhead{
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 36px;
+      text-align:left;
+      display: flex;
+      color: #000000; 
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: -40px;
+  }
+
+  .mobile-pic{
+      width:100%;
+      height: auto;
+      margin-top: 30px;
+  }
+
+  .mobile-figcaption{
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align:left;
+      margin-bottom: 80px;
+      color: #909090;
+      margin-left: 32px;
+  }
+
+  .mobile-para-text {
+      width:calc(100vw - 64px);
+      font-family: 'Noto Sans TC';
+      font-size: 18px;
+      line-height: 36px;
+      text-align:left;
+      margin-bottom: 30px;
+      color: #000000; 
+      margin-left: 32px;
+  }
+
+  /* related-block/related-article */
+  .relateds{
+      display: inline-block;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 32px;
+      width: 428px;
+      height: 78px;
+      overflow: hidden;
+  }
+  .related-text{
+      font-family: 'Noto Sans TC';
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+  }
+
+  /* line */
+  .line{
+      width: 213px;
+      height: 0.25px;
+      border: 1px;
+      color: #D4D4D4;
+  }
+
+  /*更多文章*/
+  .mobile-more {
+      max-width: calc(100vw - 64px);
+      width: calc(364 / 428 * 100%);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-left: 32px;
+      overflow: hidden;
+  }
+
+  .mobile-more .mobile-line {
+      width: calc(100vw - 131px - 64px);
+      border-bottom: 1px solid #d5d5d5;
+      margin-left: 20px;
+  }
+
+  .mobile-more .mobile-more-title {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      line-height: 26px;
+      color: #000000;
+  }
+
+  .mobile-more h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-top: 12px;
+      color: #E77D00;
+  }
+
+  .mobile-more .mobile-h4 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 23px;
+      font-family: 'Noto Sans TC';
+      color: #000000;
+      text-align: left;
+  }
+
+  .mobile-more-author{
+      font-family: 'Noto Sans TC';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: #707070; 
+  }
+
+  .mobile-more .mobile-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+.mobile-block a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between
+
+}
+.mobile-block img {
+  width: 105px;
+  height:78px;
+  object-fit: cover;
+  margin-left: 24px;
+}
+
+.mobile-block > div {
+ 
+  border-bottom: 1px solid #d5d5d5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+ 
+}
+}
+
+
+  /* 照片輪播 */
+  @media (max-width:767px) {
+    .carousel-item{
+      height: 30vh;
+      overflow: hidden;
+    }
+    .carousel-img{
+        width:100%;
+        height: 275px;
+    }
+    .carousel-figcaption{
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding-bottom: 50px;
+        margin-left: 32px;
+    }
+ }
+ 
+   /* 音樂播放鍵 */
+    @media (max-width:767px) {
+      #mobile-play-icon {
+          width: 60px;
+          height: 60px;
+          cursor: pointer;
+          overflow: hidden;
+          margin-top: 250px; 
+          margin-left: calc(280/1440*100%);
+      }
+      
+      #mobile-play-icon .playing {
+          background-size: contain;
+          background-image: url('./images/paused.png');
+          background-repeat:no-repeat;
+      }
+
+      #mobile-play-icon .paused {
+          background-size: contain;
+          background-image: url('./images/play.png');
+          background-repeat:no-repeat;
+      }
+  }
+
+  /*嵌入fb影片 */
+    @media (min-width:767px) {
+       .mobile-embed-container { 
+          position: relative; 
+          height: auto;
+          overflow: hidden; 
+          width:calc(100vw);
+          margin-top:20px;
+        } 
+
+        .mobile-embed-container iframe, .mobile-embed-container object, .mobile-embed-container embed { 
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+          width: calc(100vw);
+          height: auto;
+        }
+    }
+
+
+
+/*平板*/
+@media (max-width:1023px) and (min-width:767px) {
+    /*首圖*/
+    .tablet-hero-image {
+       width:calc(100vw - 32px - 32px);
+       height: auto; 
+       margin-left:30px;
+       margin-top: 65px;
+       overflow: hidden;
+       position:relative;
+    }
+
+    .tablet-label-tag{
+       margin-top:-350px;
+       width:calc(100vw - 320px);
+       margin-left: calc(225/834*100%);
+       overflow: hidden;
+       position:absolute;
+    }
+
+    .tablet-label{
+       width:calc(100vw - 64px);
+       color: #E77D00; 
+       font-weight: 700; 
+       font-size: 18px; 
+       line-height: 26px; 
+       width:54px; 
+       margin-top: 15px;
+       margin-left: 32px;
+       margin-bottom: 10px;
+   }
+
+    .tablet-title {
+       width:calc(100vw - 300px);
+       font-family: 'Noto Sans TC';
+       font-weight: bold;
+       font-size: 40px;
+       line-height: 54px;
+       margin-left: calc(225/834*100%);
+       margin-left: 32px;
+       margin-bottom: -5px;
+    }
+
+    .tablet-h1:hover span {
+      display: none;
+      color:#000000;
+    }
+    
+    .tablet-h1:hover:before {
+      content: '疫情嚴峻';
+      color: #E77D00;
+      font-size: 45px;  
+    }
+
+    .tablet-sub-title {
+       width:calc(100vw - 64px);
+       font-family: 'Noto Sans TC';
+       font-weight: bold;
+       font-size: 24px;
+       line-height: 38px;
+       margin-left: 32px;
+    }
+   
+    .tablet-author-block{
+       width:calc(100vw - 64px);
+       font-size: 16px;
+       line-height: 24px; 
+       color:#707070;
+       align-items: flex-start;
+       margin-left: 32px;
+    }
+
+    .tablet-tag-container {
+       width:calc(100vw - 64px);
+       margin-top: 20px;
+       display: flex;
+       align-items: flex-start;
+       gap: 10px;
+       flex-wrap: wrap;
+       margin-left: 32px;
+    }
+
+    .tablet-tag-container a {
+       padding: 3px 8px 4px;
+       text-decoration: none;
+       font-weight: 14px;
+       color: #707070;
+       font-size: 14px;
+       line-height: 20px;
+       background-color: #e5e5e5;
+       border-radius: 5px;
+    }
+
+    .tablet-tag-container a:hover {
+       background-color: #707070;
+       color: #ffffff;
+       transition-property: all;
+       transition-duration: 0s;
+    }
+
+    .tablet-metadata .tablet-tag {
+       margin-top: 24px;
+       display: flex;
+       flex-wrap: wrap
+    }      
+
+    .tablet-metadata .tablet--a {
+       color: #707070;
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 24px;  
+       background-color: #E5E5E5;
+       margin: 0 12px 15px 0;
+       padding: 3px 8px;
+       border-radius: 5px;
+    }
+
+    .tablet-metadata a:hover {
+      color: #FFFFFF;
+      background-color: #707070;
+    }
+
+    .tablet-audio{
+       margin-top: 400px;
+    }
+   
+    .tablet-lyric{
+       font-family: 'Noto Sans TC';
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 24px;
+       align-items: center;
+       text-align: center;
+       color: #D3A889;
+       margin-top: 180px;
+    }
+
+    .tablet-singer{
+       font-family: 'Noto Sans TC';
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 24px;
+       align-items: center;
+       text-align: center;
+       color: #000000;
+    }
+
+    .tablet-text{
+       width:calc(100vw - 160px - 160px);
+       font-family: 'Noto Sans TC';
+       font-size: 18px;
+       line-height: 38px;
+       color: #000000;
+       margin-top: 150px;
+       margin-bottom: 150px;
+       margin-left: 160px;
+       text-align: left;
+    }
+
+    .tablet-subhead{
+       width:calc(100vw - 320px);
+       font-family: 'Noto Sans TC';
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 47px;
+       text-align:left;
+       display: flex;
+       color: #CD9A76;
+       margin-left: 160px;
+       margin-bottom: 0px;
+    }
+
+    .tablet-minorhead{
+       width:calc(100vw - 160px - 160px);
+       font-family: 'Noto Sans TC';
+       font-weight: 700;
+       font-size: 24px;
+       line-height: 38px;
+       text-align:left;
+       display: flex;
+       color: #000000; 
+       position: relative;
+       margin-top: 40px;
+       margin-bottom: -40px;
+       margin-left: 160px;
+    }
+
+    .tablet-pic{
+       width:100%;
+       height: auto;
+       margin-top: 30px;
+    }
+
+    .tablet-figcaption{
+       width:calc(100vw - 160px - 160px);
+       font-family: 'Noto Sans TC';
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 24px;
+       text-align:left;
+       margin-bottom: 80px;
+       color: #909090;
+       margin-left: 160px;
+    }
+
+    .tablet-para-text {
+       width:calc(100vw - 160px - 160px);
+       font-family: 'Noto Sans TC';
+       font-size: 18px;
+       line-height: 36px;
+       text-align:left;
+       margin-bottom: 30px;
+       color: #000000; 
+       margin-left: 160px;
+    }
+
+    /*-- 音樂播放鍵 --*/
+       #tablet-play-icon {
+           width: 100px;
+           height: 100px;
+           cursor: pointer;
+           overflow: hidden;
+           max-width: 100px;
+           min-width: 70px;
+           margin-top: 100px; 
+           margin-left: calc(400/853*100%);
+       }
+       
+       #tablet-play-icon .playing {
+           background-size: contain;
+           background-image: url('./images/paused.png');
+           background-repeat:no-repeat;
+       }
+
+       #tablet-play-icon.paused {
+           background-size: contain;
+           background-image: url('./images/play.png');
+           background-repeat:no-repeat;
+       }
+
+
+    /*照片輪播*/
+      .tablet-carousel-item{
+        height: 80vh;
+      }
+      .tablet-carousel-img{
+        width:100%;
+        height: auto;
+      }
+      .carousel-figcaption{
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #909090;
+        padding-bottom: 50px;
+        margin-left: 32px;
+        text-align: left;
+      }
+     
+    /*-- 嵌入fb影片--*/
+        @media  (max-width:1023px) and (min-width:768px) {
+            .tablet-embed-container { 
+            position: relative; 
+            padding-bottom: 40%; 
+            height: auto;
+            overflow: hidden; 
+            width:100%;
+            } 
+            
+            .tablet-embed-container iframe, .tablet-embed-container object, .tablet-embed-container embed { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+             }
+        }
+
+
+    /*更多文章*/
+    .tablet-more {
+      max-width: calc(100vw - 160px - 160px);
+      width: calc(364 / 428 * 100%);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-left: 160px;
+      overflow: hidden;
+  }
+
+    .tablet-more .tablet-line {
+      width: calc(100vw - 131px - 64px);
+      border-bottom: 1px solid #d5d5d5;
+      margin-left: 20px;
+  }
+
+    .tablet-more .tablet-more-title {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      line-height: 38px;
+      color: #000000;
+  }
+
+    .tablet-more h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 38px;
+      margin-top: 12px;
+      color: #E77D00;
+  }
+
+    .tablet-more .tablet-h4 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      font-family: 'Noto Sans TC';
+      color: #000000;
+      text-align: left;
+  }
+
+  .tablet-more-author{
+      font-family: 'Noto Sans TC';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: #707070; 
+  }
+
+  .tablet-more .tablet-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .tablet-block a {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between
+  }
+  
+  .tablet-block img {
+      width: 105px;
+      height:78px;
+      object-fit: cover;
+      margin-left: 24px;
+  }
+
+  .tablet-block > div {
+     border-bottom: 1px solid #d5d5d5;
+     padding-top: 24px;
+     padding-bottom: 24px;
+  }
+}
+
+
+/*桌機*/
+  @media (min-width:1024px) {
+
+    /*照片輪播 */
+      .carousel-item {
+        height: 40vh;
+        overflow: hidden;
+      }
+
+      .carousel-video {
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-pic {
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-caption {
+        margin-left: -500px;
+        word-wrap: break-word;
+        max-width: 50vw;
+      }
+
+
+    /* 音樂播放鍵 */
+      #play-icon {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        overflow: hidden;
+        margin-top: 150px;
+        align-items: center;    
+      }
+
+      .music{
+        width: 120PX;
+        height: 120PX;
+        margin-left: calc(100vw - 500px - 500px);
+      }
+  
+      #play-icon.playing {
+        background-size: contain;
+        background-image: url('.images/paused.png');
+    }
+
+      #play-icon.paused {
+        background-size: contain;
+        background-image: url('./play.png');
+    }
+
+      /*-- 嵌入fb影片--*/
+      .embed-container { 
+        position: relative; 
+        padding-bottom: 40%; 
+        height: auto;
+        overflow: hidden; 
+        width:100%;
+      } 
+        
+      .embed-container iframe, .embed-container object, .embed-container embed { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width:  calc(100vw - 700px);; 
+        height: 700px;
+        margin-top: 50px;
+        margin-left: 353px;
+      }
+
+
+      /* 首圖 */
+      .hero-image {
+        height: auto;
+        margin-top: 20px;
+        margin-left: 30px; 
+        margin-top: 100px;
+    }
+
+      .label-tag {
+        margin-top: calc(100vw - 300px);
+        width: calc(100vw - 900px);
+        margin-top: -450px;
+        margin-left: calc(500/1440*100%);
+      }
+
+    .label {
+        width: calc(100vw - 900px);
+        color: #E77D00;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .title {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 54px;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+
+    h1:hover span {
+      display: none;
+      color:#000000;
+    }
+    
+    h1:hover:before {
+      content: '疫情嚴峻';
+      color: #E77D00;
+      font-size: 45px;
+    }
+
+    .sub-title {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .metadata-block {
+        width: calc(100vw - 900px);
+        margin-top: 50px;
+    }
+
+    .author-block {
+        width: calc(100vw - 900px);
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+    }
+
+    /*tag-bt*/
+    .tag-container {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tag-container a {
+        padding: 3px 8px 4px;
+        text-decoration: none;
+        font-weight: 14px;
+        color: #707070;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #e5e5e5;
+        border-radius: 5px;
+    }
+
+    .tag-container a:hover {
+        background-color: #707070;
+        color: #ffffff;
+        transition-property: all;
+        transition-duration: 0s;
+    }
+
+    .metadata .tag {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .metadata a {
+        color: #707070;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: #E5E5E5;
+        padding: 3px 8px;
+        border-radius: 5px;
+        margin: 0 12px 15px 0;
+    }
+
+    .metadata a:hover {
+        color: #FFFFFF;
+        background-color: #707070;
+        transition-property: all;
+        transition-duration: 0s;
+    }
+
+
+    .gif {
+        width: calc(364/428*100%);
+        margin-top: 400px;
+    }
+
+    .lyric {
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #D3A889;
+        margin-top: 100px;
+        margin-bottom: 96.21px;
+    }
+
+    .singer {
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+
+    .text {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-size: 18px;
+        line-height: 36px;
+        text-align: left;
+        color: #000000;
+        margin-top: 150px;
+        margin-left: 450px;
+        margin-bottom: 400px;
+    }
+
+    .subhead {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 47px;
+        text-align: left;
+        display: flex;
+        color: #CD9A76;
+        margin-bottom: 10px;
+        margin-left: 450px;
+        position: relative;
+    }
+
+    .minorhead {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: left;
+        display: flex;
+        color: #000000;
+        position: relative;
+        margin-top: 40px;
+        margin-left: 450px;
+        margin-bottom: -40px;
+    }
+
+    img {
+        width: calc(100vw - 706px);
+        height: auto;
+        margin-top: 50px;
+        margin-left: 353px;
+    }
+
+    .mirrorRotateVertical {
+        /* 水平鏡像翻轉 */
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .figcaption {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 80px;
+        color: #909090;
+        margin-left: 450px;
+    }
+
+    .para-text {
+        width: calc(100vw - 900px);
+        font-family: 'Noto Sans TC';
+        font-size: 18px;
+        line-height: 38px;
+        text-align: left;
+        margin-bottom: 30px;
+        color: #000000;
+        margin-left: 450px;
+    }
+
+    .memo {
+        margin-top: 278px;
+        margin-bottom: 278px;
+        width: 100%;
+        height: auto;
+    }
+
+    /*更多文章*/
+    .more {
+        max-width: 1120px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #d5d5d5;
+        margin-left: 160px;
+        width: calc(100vw - 160px - 160px);
+        text-decoration: none;
+    }
+
+    .more .line {
+        width: calc(100vw - 174px - 320px);
+        border-bottom: 1px solid #d5d5d5;
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    .more .title2 {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+    }
+
+    .more h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+         margin-top: 12px;
+    }
+
+    .more h4 {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        text-decoration: none;
+    }
+
+    .more-author {
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #707070;
+    }
+
+    .more-block {
+        max-width: calc(100vw - 20px);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 8px;
+        word-wrap: break-word;
+    }
+
+    .small-block {
+        width: 250px;
+    }
+
+    .more-img {
+        margin-left: 5px;
+        width: 100%;
+        display: flex;
+        height: calc(140 / width * 100%);
+        justify-content: space-between;
+        object-fit: cover;
+    }
+
+    .block img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .block>div {
+        width: calc(500 / 1120 * 100%);
+        max-width: 500px;
+    }
+
+}
+    
+
+
+ 
