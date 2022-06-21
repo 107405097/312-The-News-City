@@ -1,3 +1,38 @@
+/* 三種裝置頁面分別顯示 */
+  @media (min-width:1024px) {
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) and (min-width:767px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+
+@media (max-width:767x) {
+  .tablet {
+      display: none;
+  }
+
+  .desktop {
+      display: none;
+  }
+}
+
+
+
+
 /*手機*/
 @media (max-width:767px) {
    /*首圖*/
@@ -34,12 +69,12 @@
       margin-left: 32px;
     }
 
-    h1:hover span {
+    .mobile-h1:hover span {
       display: none;
       color:#000000;
     }
     
-    h1:hover:before {
+    .mobile-h1:hover:before {
       content: '疫情嚴峻';
       color: #E77D00;
       font-size: 38px;
@@ -129,7 +164,7 @@
       margin-top: 180px;
   }
 
-  .mobile-singer{
+    .mobile-singer{
       font-family: 'Noto Sans TC';
       font-weight: 400;
       font-size: 14px;
@@ -139,7 +174,7 @@
       color: #000000;
   }
 
-  .mobile-text{
+    .mobile-text{
       width:calc(100vw - 64px);
       font-family: 'Noto Sans TC';
       font-size: 18px;
@@ -151,7 +186,7 @@
       text-align: left;
   }
 
-  .mobile-subhead{
+    .mobile-subhead{
       width:calc(100vw - 64px);
       font-family: 'Noto Sans TC';
       font-weight: 700;
@@ -162,7 +197,7 @@
       color: #CD9A76;
   }
 
-  .mobile-minorhead{
+    .mobile-minorhead{
       width:calc(100vw - 64px);
       font-family: 'Noto Sans TC';
       font-weight: 700;
@@ -174,15 +209,15 @@
       position: relative;
       margin-top: 40px;
       margin-bottom: -40px;
-  }
+    }
 
-  .mobile-pic{
+    .mobile-pic{
       width:100%;
       height: auto;
       margin-top: 30px;
-  }
+    }
 
-  .mobile-figcaption{
+    .mobile-figcaption{
       width:calc(100vw - 64px);
       font-family: 'Noto Sans TC';
       font-weight: 400;
@@ -192,9 +227,9 @@
       margin-bottom: 80px;
       color: #909090;
       margin-left: 32px;
-  }
+    }
 
-  .mobile-para-text {
+    .mobile-para-text {
       width:calc(100vw - 64px);
       font-family: 'Noto Sans TC';
       font-size: 18px;
@@ -203,10 +238,10 @@
       margin-bottom: 30px;
       color: #000000; 
       margin-left: 32px;
-  }
+    }
 
   /* related-block/related-article */
-  .relateds{
+    .mobile-relateds{
       display: inline-block;
       flex-direction: column;
       align-items: flex-start;
@@ -215,7 +250,7 @@
       height: 78px;
       overflow: hidden;
   }
-  .related-text{
+    .mobile-related-text{
       font-family: 'Noto Sans TC';
       font-weight: 700;
       font-size: 18px;
@@ -225,8 +260,8 @@
       color: #000000;
   }
 
-  /* line */
-  .line{
+   /* line */
+    .mobile-line{
       width: 213px;
       height: 0.25px;
       border: 1px;
@@ -234,7 +269,7 @@
   }
 
   /*更多文章*/
-  .mobile-more {
+    .mobile-more {
       max-width: calc(100vw - 64px);
       width: calc(364 / 428 * 100%);
       font-size: 18px;
@@ -244,13 +279,13 @@
       overflow: hidden;
   }
 
-  .mobile-more .mobile-line {
+    .mobile-more .mobile-line {
       width: calc(100vw - 131px - 64px);
       border-bottom: 1px solid #d5d5d5;
       margin-left: 20px;
   }
 
-  .mobile-more .mobile-more-title {
+    .mobile-more .mobile-more-title {
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -259,7 +294,7 @@
       color: #000000;
   }
 
-  .mobile-more h2 {
+    .mobile-more h2 {
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
@@ -267,7 +302,7 @@
       color: #E77D00;
   }
 
-  .mobile-more .mobile-h4 {
+    .mobile-more .mobile-h4 {
       font-weight: 700;
       font-size: 16px;
       line-height: 23px;
@@ -276,7 +311,7 @@
       text-align: left;
   }
 
-  .mobile-more-author{
+    .mobile-more-author{
       font-family: 'Noto Sans TC';
       font-weight: 400;
       font-size: 14px;
@@ -287,37 +322,34 @@
       color: #707070; 
   }
 
-  .mobile-more .mobile-block {
+    .mobile-more .mobile-block {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
 
-.mobile-block a {
+    .mobile-block a {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between
 
-}
-.mobile-block img {
-  width: 105px;
-  height:78px;
-  object-fit: cover;
-  margin-left: 24px;
-}
+  }  
+    .mobile-block img {
+      width: 105px;
+      height:78px;
+      object-fit: cover;
+      margin-left: 24px;
+  }
 
-.mobile-block > div {
- 
-  border-bottom: 1px solid #d5d5d5;
-  padding-top: 24px;
-  padding-bottom: 24px;
- 
-}
-}
+    .mobile-block > div {
+      border-bottom: 1px solid #d5d5d5;
+      padding-top: 24px;
+      padding-bottom: 24px;
+  }
 
 
   /* 照片輪播 */
-  @media (max-width:767px) {
+   @media (max-width:767px) {
     .carousel-item{
       height: 30vh;
       overflow: hidden;
@@ -337,8 +369,7 @@
     }
  }
  
-   /* 音樂播放鍵 */
-    @media (max-width:767px) {
+     /* 音樂播放鍵 */
       #mobile-play-icon {
           width: 60px;
           height: 60px;
@@ -359,11 +390,9 @@
           background-image: url('./images/play.png');
           background-repeat:no-repeat;
       }
-  }
 
   /*嵌入fb影片 */
-    @media (min-width:767px) {
-       .mobile-embed-container { 
+      .mobile-embed-container { 
           position: relative; 
           height: auto;
           overflow: hidden; 
@@ -371,16 +400,14 @@
           margin-top:20px;
         } 
 
-        .mobile-embed-container iframe, .mobile-embed-container object, .mobile-embed-container embed { 
+      .mobile-embed-container iframe, .mobile-embed-container object, .mobile-embed-container embed { 
           position: absolute; 
           top: 0; 
           left: 0; 
           width: calc(100vw);
           height: auto;
         }
-    }
-
-
+}
 
 /*平板*/
 @media (max-width:1023px) and (min-width:767px) {
@@ -624,10 +651,10 @@
 
 
     /*照片輪播*/
-      .tablet-carousel-item{
+      .carousel-item{
         height: 80vh;
       }
-      .tablet-carousel-img{
+      .carousel-img{
         width:100%;
         height: auto;
       }
@@ -777,7 +804,8 @@
         cursor: pointer;
         overflow: hidden;
         margin-top: 150px;
-        align-items: center;    
+        align-items: center; 
+        margin-left: calc(0/1440*100%);   
       }
 
       .music{
