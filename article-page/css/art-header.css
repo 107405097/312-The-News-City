@@ -4,11 +4,44 @@ a {text-decoration: none;}
     display: none;
 }
 
+  /* 三種裝置頁面分別顯示 */
+  @media (min-width:1024px) {
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) and (min-width:767px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:767x) {
+    .tablet {
+        display: none;
+    }
+  
+    .desktop {
+        display: none;
+    }
+}  
+
+
 /* 桌機 */
 @media (min-width:1024px) {
 
     #header {
         display: flex;
+
         justify-content: space-between;
         position: fixed;
         top: 0px;
