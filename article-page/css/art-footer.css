@@ -22,6 +22,37 @@ footer p ,span {
     color:#E77D00;
 }
 
+  /* 三種裝置頁面分別顯示 */
+  @media (min-width:1024px) {
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+   @media (max-width:1023px) and (min-width:767px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+    @media (max-width:767x) {
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
 
 /*PC*/
 @media (min-width:1024px) {
