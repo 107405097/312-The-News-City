@@ -15,7 +15,7 @@ a {text-decoration: none;}
     }
 }
 
-@media (max-width:1023px) and (min-width:767px) {
+@media (max-width:1023px) and (min-width:768px) {
     .desktop {
         display: none;
     }
