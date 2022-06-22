@@ -33,7 +33,7 @@ footer p ,span {
     }
 }
 
-   @media (max-width:1023px) and (min-width:767px) {
+   @media (max-width:1023px) and (min-width:768px) {
     .desktop {
         display: none;
     }
@@ -105,7 +105,7 @@ footer p ,span {
 }
 
 /*PAD*/
-@media (max-width:1023px) and (min-width:767px) {
+@media (max-width:1023px) and (min-width:768px) {
 
     #tablet-footer {
         padding-left: 17%;
