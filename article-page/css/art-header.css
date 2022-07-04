@@ -23,6 +23,7 @@ a {text-decoration: none;}
     .logo {
         height: 25px;
         width: 126px;
+        margin: 0px;
     }
 
     /* navbar */
