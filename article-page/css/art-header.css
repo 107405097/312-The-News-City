@@ -4,44 +4,11 @@ a {text-decoration: none;}
     display: none;
 }
 
-  /* 三種裝置頁面分別顯示 */
-  @media (min-width:1024px) {
-    .tablet {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-}
-
-@media (max-width:1023px) and (min-width:768px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-}
-
-@media (max-width:767x) {
-    .tablet {
-        display: none;
-    }
-  
-    .desktop {
-        display: none;
-    }
-}  
-
-
 /* 桌機 */
 @media (min-width:1024px) {
 
-    #header {
+    header {
         display: flex;
-
         justify-content: space-between;
         position: fixed;
         top: 0px;
@@ -55,20 +22,16 @@ a {text-decoration: none;}
 
     .logo {
         height: 25px;
-        width: 126px;
-        margin-left: 50px;
-        margin-top: 0px;
     }
 
-    /* navbar*/
-        /* 刪掉怪怪的padding*/
+    /* navbar */
+        /* 刪掉怪怪的padding */
         .container-fluid {
             padding: 0px;
         }
 
         .navbar-expand-lg .navbar-nav .nav-link {
             padding: 0px;
-            text-decoration: none;
         }
 
         /* 正確padding與樣式 */
@@ -78,20 +41,17 @@ a {text-decoration: none;}
             font-size: 16px;
             line-height: 19px;
             color: #909090;
-            text-decoration: none;
         }
 
         .nav-item:hover{
             background-color: #E5E5E5;
             color: #505050;
             transition: all;
-            text-decoration: none;
         }
 
         .dropdown-menu{
             border: 0px;
             border-radius: 0px;
-            text-decoration: none;
         }
 
         .dropdown-item{
@@ -99,14 +59,12 @@ a {text-decoration: none;}
             font-family: 'Noto Sans TC';
             font-size: 14px;
             color: #909090;
-            text-decoration: none;
         }
 
         .dropdown-item:hover{
             background-color: #E5E5E5;
             color: #505050;
             transition: all;
-            text-decoration: none;
         }
 
 
@@ -130,17 +88,19 @@ a {text-decoration: none;}
     }
 
     header {
-        width: calc(100vw - 22px);
+        width: 100%;
         height: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         position: fixed;
         top: 0px;
         z-index:100;
         background-color: #F5F5F5;
-        overflow: hidden;
+
     }
+
 
     header ul {
         list-style: none;
@@ -151,6 +111,7 @@ a {text-decoration: none;}
 
     header .hbg {
         width: 24px;
+
     }
 
     .hbg>div {
@@ -286,25 +247,23 @@ a {text-decoration: none;}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .tablet-logo{
+    .logo{
         width: 125.63px;
         height: 25px;
     }
 
     header{
         padding: 18px 6%;
-        width: 100%;
     }
 }    
     
 /* Mobile */
 @media (max-width: 767px) {
-    .mobile-logo{
+    .logo{
         height: 20px;
     }
 
     header{
         padding: 17px 7.4%;
-        width: 100%;
     }
 }
