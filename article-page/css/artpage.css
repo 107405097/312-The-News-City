@@ -20,7 +20,7 @@
 }
 
 
-@media (max-width:767x) {
+@media (max-width:767px) {
   .tablet {
       display: none;
   }
