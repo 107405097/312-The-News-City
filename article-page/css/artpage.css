@@ -775,7 +775,7 @@
 
     /*照片輪播 */
       .carousel-item {
-        height: 100vh;
+        height: 80vh;
         overflow: hidden;
       }
 
