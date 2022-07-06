@@ -651,14 +651,14 @@
 
 
     /*照片輪播*/
-      .carousel-item{
+      .tablet-carousel-item{
         height: 80vh;
       }
-      .carousel-img{
+      .tablet-carousel-img{
         width:100%;
         height: auto;
       }
-      .carousel-figcaption{
+      .tablet-carousel-figcaption{
         font-family: 'Noto Sans TC';
         font-weight: 400;
         font-size: 14px;
