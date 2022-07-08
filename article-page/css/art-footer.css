@@ -154,7 +154,7 @@ footer p ,span {
         margin-bottom: 74.5px;
     }
 
-    footer .member {
+    footer .tablet-member {
         width: 236px;
         height: 144px;
         display: flex;
@@ -205,7 +205,7 @@ footer p ,span {
         line-height: 17px;
     }
 
-    footer .logo-copyright {
+    footer .mobile-logo-copyright {
         width: 238px;
         height: 219px;
         display: flex;
@@ -214,7 +214,7 @@ footer p ,span {
         position: relative;
     }
 
-    footer .member {
+    footer .mobile-member {
         max-width: 250px;
         height: 120px;
         justify-content: space-between;
@@ -222,7 +222,7 @@ footer p ,span {
         top: 88px;
     }
 
-    .us{
+    .mobile-us{
         margin-top: 24px;
         margin-right: 0px;
         width: 100%;
