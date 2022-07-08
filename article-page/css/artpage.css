@@ -376,7 +376,7 @@
           cursor: pointer;
           overflow: hidden;
           margin-top: 250px; 
-          margin-left: calc(280/786*100%);
+          margin-left: calc(500/786*100%);
       }
       
       #mobile-play-icon .playing {
