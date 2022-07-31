@@ -140,22 +140,25 @@
                 <source src="./images/防疫小短歌.mp3" type="audio/mpeg" />
             </audio>
             <!-- 載入 jQuery 套件 -->
-             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"crossorigin="anonymous"></script>
-     
+            <script src="https://code.jquery.com/jquery-3.6.0.js"
+                    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
             <script>
-                var play_button = $('#play-icon');
+                var desktop_play_button = $('#play-icon');
                 // 找到 <audio> 元素
-                var player = document.getElementById('player');
+                var desktop_player = document.getElementById('player');
                 // 設定聲音大小
-                player.volume = 0.75;
+                desktop_player.volume = 0.75;
                 // 當使用者點擊「播放／暫停按鈕」後，
                 // 暫停／播放音檔
-                play_button.click(function () {
-                    player[player.paused ? 'play' : 'pause']();
-                    if (player.paused) {
-                        play_button.removeClass().addClass('paused')
+                desktop_play_button.click(function () {
+                    desktop_player[desktop_player.paused ? 'play' : 'pause']();
+                    if (desktop_player.paused) {
+                        desktop_play_button.removeClass().addClass('paused')
+                        $('#play-icon > img').attr('src', './images/play.png');
                     } else {
-                        play_button.removeClass().addClass('playing')
+                        desktop_play_button.removeClass().addClass('playing')
+                        $('#play-icon > img').attr('src', './images/paused.png');
                     }
                 });
             </script>
@@ -442,32 +445,6 @@
            </div>
         </div>
         
-    <!-- 透過 <audio> 載入音檔 -->
-     <audio id="player">
-        <source src="./images/防疫小短歌.mp3" type="audio/mpeg" />
-     </audio>
-    <!-- 載入 jQuery 套件 -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"crossorigin="anonymous"></script>
-     
-     <script>
-        var play_button = $('#tablet-play-icon');
-        
-        // 找到 <audio> 元素
-        var player = document.getElementById('player');
-        // 設定聲音大小
-        player.volume = 0.75;
-        // 當使用者點擊「播放／暫停按鈕」後，
-        // 暫停／播放音檔
-        play_button.click(function () {
-            player[player.paused ? 'play' : 'pause']();
-            if (player.paused) {
-                play_button.removeClass().addClass('paused')
-            } else {
-                play_button.removeClass().addClass('playing')
-            }
-        });
-     </script>
-    
     
     <!-- 音樂 -->
     <div id="tablet-play-icon" class="paused music">
@@ -484,22 +461,24 @@
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
          <script>
-            var play_button = $('#tablet-play-icon');
+            var tablet_play_button = $('#tablet-play-icon');
             
             // 找到 <audio> 元素
-            var player = document.getElementById('player');
+            var tablet_player = document.getElementById('player');
     
             // 設定聲音大小
-            player.volume = 0.75;
+            tablet_player.volume = 0.75;
     
             // 當使用者點擊「播放／暫停按鈕」後，
             // 暫停／播放音檔
-            play_button.click(function () {
-                player[player.paused ? 'play' : 'pause']();
-                if (player.paused) {
-                    play_button.removeClass().addClass('paused')
+            tablet_play_button.click(function () {
+                tablet_player[tablet_player.paused ? 'play' : 'pause']();
+                if (tablet_player.paused) {
+                    tablet_play_button.removeClass().addClass('paused')
+                    $('#tablet-play-icon > img').attr('src', './images/play.png');
                 } else {
-                    play_button.removeClass().addClass('playing')
+                    tablet_play_button.removeClass().addClass('playing')
+                    $('#tablet-play-icon > img').attr('src', './images/paused.png');
                 }
             });
      </script>
@@ -584,7 +563,7 @@
     <p class="w-364 block-horizontal-center tablet-para-text">楊元慶表示，街頭藝人也不能一味等待政府幫助，街藝協會近期便開始鼓勵街頭藝人往線上發展，透過影像和直播，主動連結螢幕對面的觀眾，希望能在這艱困的時日找到出路。</p>
     
     <!-- 照片輪播 -->
-    <div id="tablet-carouselExampleCaptions" class="tablet-carousel tablet-slide" data-bs-ride="tablet-carousel">
+    <div id="tablet-carouselExampleCaptions" class="tablet-carousel carousel tablet-slide" data-bs-ride="tablet-carousel">
         <div class="tablet-carousel-indicators">
           <button type="button" data-bs-target="#tablet-carouselExampleCaptions" data-bs-slide-to="0" class="tablet-active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#tablet-carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -744,6 +723,8 @@
 		       </div>
             </div>
          <!-- 音樂 -->
+          <style>
+          </style>
            <div id="mobile-play-icon" class="paused">
                <img src="./images/play.png" alt="play" style="width: 100%">
            </div>
@@ -757,23 +738,25 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"crossorigin="anonymous"></script>
                <div id="fb-root"></div>
             <script>
-            var play_button = $('#mobile-play-icon');
+            var mobile_play_button = $('#mobile-play-icon');
             // 找到 <audio> 元素
-            var player = document.getElementById('player');
+            var mobile_player = document.getElementById('player');
     
             // 載入音檔
-            player.load();
+            mobile_player.load();
             // 設定聲音大小
-            player.volume = 0.75;
+            mobile_player.volume = 0.75;
     
             // 當使用者點擊「播放／暫停按鈕」後，
             // 暫停／播放音檔
-            play_button.click(function () {
-                player[player.paused ? 'play' : 'pause']();
-                if (player.paused) {
-                    play_button.removeClass().addClass('paused')
+            mobile_play_button.click(function () {
+                mobile_player[mobile_player.paused ? 'play' : 'pause']();
+                if (mobile_player.paused) {
+                    mobile_play_button.removeClass().addClass('paused');
+                  $('#mobile-play-icon > img').attr('src', './images/play.png');
                 } else {
-                    play_button.removeClass().addClass('playing')
+                    mobile_play_button.removeClass().addClass('playing');
+                  $('#mobile-play-icon > img').attr('src', './images/paused.png');
                 }
             });
         </script>
@@ -873,41 +856,41 @@
         <p class="w-364 block-horizontal-center mobile-para-text">楊元慶表示，街頭藝人也不能一味等待政府幫助，街藝協會近期便開始鼓勵街頭藝人往線上發展，透過影像和直播，主動連結螢幕對面的觀眾，希望能在這艱困的時日找到出路。</p>
         
         <!-- 照片輪播 -->
-        <div id="mobile-carouselExampleCaptions" class="mobile-carousel slide" data-bs-ride="mobile-carousel">
-            <div class="mobile-carousel-indicators">
-              <button type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide-to="0" class="mobile-active" aria-current="true" aria-label="mobile-Slide 1"></button>
+        <div id="mobile-carouselExampleCaptions" class="mobile-carousel carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators carousel-indicators">
+              <button type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="mobile-Slide 1"></button>
               <button type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide-to="1" aria-label="mobile-Slide 2"></button>
               <button type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide-to="2" aria-label="mobile-Slide 3"></button>
             </div>
-            <div class="mobile-carousel-inner">
-              <div class="mobile-carousel-item mobile-active">
-                <img class="mobile-carousel-pic"
-                            src="https://static.wixstatic.com/media/da2208_296bd91d42a0410ea6e48da4f17934aaf000.jpg/v1/fill/w_1425,h_485,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/da2208_296bd91d42a0410ea6e48da4f17934aaf000.jpg" style="width: 100%;  height:100%"
+            <div class="carousel-inner carousel-inner">
+              <div class="carousel-item active">
+                <img class="carousel-pic"
+                            src="https://static.wixstatic.com/media/da2208_296bd91d42a0410ea6e48da4f17934aaf000.jpg/v1/fill/w_1425,h_485,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/da2208_296bd91d42a0410ea6e48da4f17934aaf000.jpg" style="width: 100%; height: 100%;object-fit: cover"
                             alt="楊元慶">
-                <div class="mobile-carousel-caption mobile-d-none mobile-d-md-block">
-                  <p class="mobile-carousel-figcaption">街頭藝人無法上街表演，溜溜球表演者楊元慶只得在家中不斷練習，維持手感。&nbsp;&nbsp;影片／楊元慶提供</p>
+                <div class="carousel-caption mobile-d-none mobile-d-md-block">
+                  <p class="carousel-figcaption">街頭藝人無法上街表演，溜溜球表演者楊元慶只得在家中不斷練習，維持手感。&nbsp;&nbsp;影片／楊元慶提供</p>
                 </div>
               </div>
-              <div class="mobile-carousel-item">
-                <img class="mobile-d-block mobile-w-100" src="https://static.wixstatic.com/media/da2208_bcc77b66eb10448199c3a37caa519c36~mv2.jpg/v1/fill/w_1113,h_549,al_c,q_85,enc_auto/da2208_bcc77b66eb10448199c3a37caa519c36~mv2.jpg" alt="楊元慶1" style="width:100%">
-                <div class="mobile-carousel-caption mobile-d-none mobile-d-md-block">
-                  <span class="mobile-carousel-figcaption">受疫情影響，楊元慶6月的商演、演講接連取消。熱愛表演的他透過線上直播，維繫與觀眾的互動。　圖／楊元慶提供</span>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://static.wixstatic.com/media/da2208_bcc77b66eb10448199c3a37caa519c36~mv2.jpg/v1/fill/w_1113,h_549,al_c,q_85,enc_auto/da2208_bcc77b66eb10448199c3a37caa519c36~mv2.jpg" alt="楊元慶1" style="width:100%">
+                <div class="carousel-caption d-none d-md-block">
+                  <span class="carousel-figcaption">受疫情影響，楊元慶6月的商演、演講接連取消。熱愛表演的他透過線上直播，維繫與觀眾的互動。　圖／楊元慶提供</span>
                 </div>
               </div>
-              <div class="mobile-carousel-item">
-                <img class="mobile-d-block mobile-w-100" src="https://static.wixstatic.com/media/da2208_2099df2054a54f4a943bcecab9d62300~mv2.jpg/v1/fill/w_1271,h_627,al_c,q_85,enc_auto/da2208_2099df2054a54f4a943bcecab9d62300~mv2.jpg" alt="楊元慶2" style="width:100%">
-                <div class="mobile-carousel-caption mobile-d-none mobile-d-md-block">
-                  <p class="mobile-carousel-figcaption">2014年楊元慶接連奪下「溜溜球抽餐巾、打硬幣」兩項金式世界紀錄。&nbsp;&nbsp;圖／楊元慶提供</p>
+              <div class="carousel-item">
+                <img class="d-block mobile-w-100" src="https://static.wixstatic.com/media/da2208_2099df2054a54f4a943bcecab9d62300~mv2.jpg/v1/fill/w_1271,h_627,al_c,q_85,enc_auto/da2208_2099df2054a54f4a943bcecab9d62300~mv2.jpg" alt="楊元慶2" style="width:100%">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="carousel-figcaption">2014年楊元慶接連奪下「溜溜球抽餐巾、打硬幣」兩項金式世界紀錄。&nbsp;&nbsp;圖／楊元慶提供</p>
                 </div>
               </div>
             </div>
-            <button class="mobile-carousel-control-prev" type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide="prev">
-              <span class="mobile-carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="mobile-visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="mobile-carousel-control-next" type="mobile-button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide="next">
-              <span class="mobile-carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="mobile-visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#mobile-carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         <h3 class="mobile-minorhead mobile-title block-horizontal-center" style="margin-top: 145px;">林捲兒：</h3>
